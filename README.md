@@ -27,7 +27,7 @@ par se les debe multiplicar por dos, si este número es mayor o igual a 10,
 debemos sumar los dígitos del resultado; el número a verificar será válido si
 la suma de sus dígitos finales es un múltiplo de 10.
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![gráfica de algoritmo de Luhn](./AlgoritmoLuhn.png)
 
 No te quedes demasiado tiempo pensando en el algoritmo, lo vas a utilizar para completar el proyecto pero los objetivos de aprendizaje no tratan sobre el algoritmo en sí mismo.
 
@@ -204,9 +204,9 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 - [ ] **Seguir los principios básicos de diseño visual**
 
 ## 3. Consideraciones generales
-* Este proyecto se debe trajar de manera **individual**. 
-* Tiempo estimado para completar las 2 partes: **1-3 _sprints_** (semanas). 
-* Tiempo estimado para completar esta 1era parte: no más de **1 _sprint_** (semanas). 
+* Este proyecto se debe trajar de manera **individual**.
+* Tiempo estimado para completar las 2 partes: **1-3 _sprints_** (semanas).
+* **Tiempo estimado** para completar esta 2da parte: no más de **1 _sprint_** (semanas). 👀
 
 ### 3.1 Recomendaciones
 * No te sientas culpable por no saber. SI estás acá es porque quieres aprender, si ya supieras programar estarías trabajando.
