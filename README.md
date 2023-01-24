@@ -3,14 +3,13 @@
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
+* [2. Objetivos de aprendizaje generales](#2-objetivos-de-aprendizaje-generales)
 * [3. Consideraciones generales](#3-consideraciones-generales)
 * [4. Hito: Criterios de aceptación mínimos del proyecto](#4-hito-criterios-de-aceptación-mínimos-del-proyecto)
 * [5. Hito Opcional: Mostrar la franquicia de tarjeta](#5-hito-opcional-mostrar-la-franquicia-de-tarjeta)
 * [6. Consideraciones técnicas](#6-consideraciones-técnicas)
-* [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Para considerar Project Feedback](#9-para-considerar-project-feedback)
+* [7. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [8. Para considerar Project Feedback](#9-para-considerar-project-feedback)
 
 ***
 
@@ -358,17 +357,8 @@ En este proyecto utilizaremos _Github Pages_ para desplegar nuestro sitio web.
 El comando `npm run deploy` puede ayudarte con esta tarea. Puedes
  consultar su [documentación oficial](https://docs.github.com/es/pages).
 
-## 7. Objetivos de aprendizaje especçíficos
 
-> ℹ️ Esta sección será auomáticamente generada en el idioma pertinente, a partir
-> de los objetivos de aprendizaje declarados en [`project.yml`](./project.yml),
-> al crear el repo del proyecto para un cohort en particular usando
-> [`./scripts/create-cohort-project.js`](../../scripts#create-cohort-project-coaches).
->
-> Acá puedes ver una [lista de todos los objetivos de aprendizaje](../../learning-objectives/data.yml)
-> que contempla nuestra currícula.
-
-## 8. Pistas, tips y lecturas complementarias
+## 7. Pistas, tips y lecturas complementarias
 
 ### Prepara tu PC para trabajar
 
