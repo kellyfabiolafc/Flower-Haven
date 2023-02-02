@@ -6,9 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h2>VALIDA TU NUMERO DE TARJETA AQUI</h2>
+    </header>
+    <main>
+      <form class="form" id="myForm">
+     
+          <div> 
+            <label >Número de tarjeta: </label>
+            <input  type="text" name="number" id="cardnumber" placeholder="0000000000000000" maxlength="16">
+            
+            <label >Ingrese su nombre:</label>
+            <input maxlength="25" placeholder="Nombre de usuario" type="text" >
+            <label > Expiracion </label> 
+           <input   type="month" placeholder="Mes" >
+             <label >Ccv</label> 
+           <input  maxlength="5" placeholder="00000" type="text">
+           <br>
+           <br>
+      <button  type="submit" id="btnvalidate"> Validar </button>
+            </div>
+            <p > El campo <strong>Número de tarjeta</strong> es obligatorio, los demás campos son opcionales. </p>
+            <div  class="ultimosdiv"   id="result"></div><br>
+            <div class="ultimosdiv"  id="maskify"></div>
+  </form>
+</main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
+

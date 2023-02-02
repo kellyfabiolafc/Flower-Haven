@@ -1,0 +1,78 @@
+
+html,body{
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+    background: rgb(254, 214, 225)
+}
+header {
+     background-color: rgb(236, 65, 122);
+    color: #fff;
+    text-align: center;
+    font-family: system-ui;
+    height: 70px;
+    margin: 0.2rem;
+    padding: 15px;
+    
+    /*border-radius: 20px;
+   line-height: 22px;*/
+    
+}
+.form label{
+    margin: 14rem;
+}
+.form input{
+    width: 70%;
+    height: 33px;
+    margin: 0.7rem;
+    text-align: center;
+    /*border-radius: 50px;*/
+    background-color: rgb(254, 214, 225);
+    border-color: rgb(236, 65, 122);
+    /*border: none;*/
+    margin-left: 5rem;  
+}
+.form button{
+    margin-left: 9rem;
+    border: none;
+    background-color: rgb(236, 65, 122);
+    color: #fff;
+    cursor: pointer;
+    width: 50%;
+        height: 45px;
+        font-family: arial;
+        border-radius: 50px;
+        
+}
+main {
+    
+    width: 100%;
+    height: 520px;
+padding: 2px;
+ background-color:rgb(255, 242, 244);
+    font-size: 15px;
+    font-family: arial;
+    border-radius: 10px;
+    
+}
+
+p { 
+    text-align: center;
+}
+
+.ultimosdiv{
+    background-color:pink;
+    font-family: arial;
+    height: 10px;
+    /*margin: 0.2rem;*/
+    padding: 10px;
+    color: rgb(12, 11, 11);
+    display: none;
+    width: 80%;
+    margin-left: 3rem;
+    text-align: center;
+    
+    /*border: 1px dashed rgb(255, 0, 8);*/
+}
