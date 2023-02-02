@@ -1,6 +1,5 @@
 
 import validator from './validator.js';
-
 const input = document.getElementById("cardnumber");
 input.addEventListener("input", function() {
   if (!/^\d+$/.test(this.value)) {
