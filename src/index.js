@@ -32,7 +32,7 @@ form.addEventListener("submit", function(event) {
       document.getElementById("result").style.display="block";
       document.getElementById("maskify").style.display="block";
       document.getElementById("result").innerHTML = 'Tarjeta valida: ';
-      document.getElementById("maskify").innerHTML = 'Número enmascarado: '+ maskify;
+      document.getElementById("maskify").innerHTML = maskify;
     }
     else {
       // Show error message in div#result
@@ -40,7 +40,7 @@ form.addEventListener("submit", function(event) {
       document.getElementById("result").style.display="block";
       document.getElementById("maskify").style.display="block";
       document.getElementById("result").innerHTML = 'Tarjeta invalida: ';
-      document.getElementById("maskify").innerHTML = 'Número enmascarado: '+ maskify;
+      document.getElementById("maskify").innerHTML = maskify;
     }
   }
   //}
