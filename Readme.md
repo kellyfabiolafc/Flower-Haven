@@ -431,5 +431,5 @@ Debes hacer un ejercicio de autoevaluación de objetivos de aprendizaje específ
 Debes hacer una autoevaluación de tus _life skills_ también desde tu dashboard de estudiante.
 
 Si no has completado todo lo anterior, no consideramos que estás lista para tu sesión de Project Feedback.
-.
+
 
