@@ -8,25 +8,25 @@ const validator = {
     }
     const reverseCreditCardNumber=invertirCadena(creditCardNumber);
     const amountOfTours=creditCardNumber.length;
-    let SumaValoresdePocisionesPares=0;
-    let SumaValoresdePocisionesImPares=0;
+    let SumOffOddPositions=0;
+    let SumOffEvenPositions=0;
     let i;
     for (i=0;i<amountOfTours;i++){ 
-      const valordeCarater = parseInt( reverseCreditCardNumber.charAt(i)) ; 
+      const CharacterValue = parseInt( reverseCreditCardNumber.charAt(i)) ; 
       if (i%2===0){
-        SumaValoresdePocisionesPares=SumaValoresdePocisionesPares+valordeCarater;
+        SumOffOddPositions=SumOffOddPositions+CharacterValue;
       }
       if (i%2===1){
-        let ValInpar;
-        ValInpar=valordeCarater*2;
-        if (ValInpar>9){//ValInpar = parseInt( (ValInpar.toString().charAt(0)))+ parseInt( (ValInpar.toString().charAt(1)));
-          ValInpar = ValInpar-9;
+        let OddValue;
+        OddValue=CharacterValue*2;
+        if (OddValue>9){//OddValue = parseInt( (OddValue.toString().charAt(0)))+ parseInt( (OddValue.toString().charAt(1)));
+          OddValue = OddValue-9;
         }
-        SumaValoresdePocisionesImPares=SumaValoresdePocisionesImPares+ValInpar;
+        SumOffEvenPositions=SumOffEvenPositions+OddValue;
       }
     }
-    const SumaTotal=SumaValoresdePocisionesImPares+SumaValoresdePocisionesPares;
-    const ValEnds= SumaTotal%10;
+    const TotalAmount=SumOffEvenPositions+SumOffOddPositions;
+    const ValEnds= TotalAmount%10;
     if (ValEnds===0){ 
       return true;
     } else {
