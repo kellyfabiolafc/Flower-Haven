@@ -1,4 +1,3 @@
-
 import validator from './validator.js';
 const input = document.getElementById("cardnumber");
 input.addEventListener("input", function() {
@@ -15,7 +14,7 @@ form.addEventListener("submit", function(event) {
   if (input.value.trim().length === 0) {
     // El campo está vacío, se detiene el envío del formulario
     event.preventDefault();
-    alert("El campo no puede estar vacío");
+    alert("El campo número de tarjeta no puede estar vacío");
   }
   /*else { 
     if (input.value.trim().length < 14 ) {
@@ -45,5 +44,3 @@ form.addEventListener("submit", function(event) {
   }
   //}
 });
-
- 
