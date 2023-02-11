@@ -1,5 +1,4 @@
-
-html,body{
+html{
     height: 100%;
     width: 100%;
     max-width: 600px;
@@ -15,6 +14,7 @@ header {
     height: 70px;
     margin: 0.2rem;
     padding: 15px;
+    font-size: 11px;
     
     /*border-radius: 20px;
    line-height: 22px;*/
@@ -48,13 +48,13 @@ header {
 }
 main {
     
-    width: 100%;
+    width: 99%;
     height: 520px;
 padding: 2px;
  background-color:rgb(255, 242, 244);
     font-size: 15px;
     font-family: arial;
-    border-radius: 10px;
+
     
 }
 
