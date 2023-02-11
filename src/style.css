@@ -6,6 +6,7 @@ html{
     margin: 0 auto;
     background: #84A4A1;
 }
+
 header {
      background-color: hsl(173, 100%, 24%);
     color: #fff;
@@ -14,33 +15,42 @@ header {
     /*height: 70px;*/
     padding: 15px;
     font-size: 13px;
-    margin-right: -6px;
+    margin-right: -6px;}
     /*border-right: 4px;*/
     /*border-color: hsl(173, 100%, 24%);*/
     /*margin-right: -5.6px;*/
    /* padding-bottom: 35px;*/
-}
+
     /*border-radius: 20px;
    line-height: 22px;*/
 
-.form label{
+/*.firtsLabel{
     margin : 14rem;
     font-family:"Nunito Sans" ;
     color: black;
 }
+#penultimateDiv{
+    margin : 16rem;
+}
+#lastLabel{
+    margin : 17rem;
+}*/
+#myForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
 .form input{
     width: 70%;
     height: 33px;
     margin: 0.7rem;
     text-align: center;
-    /*background-color:#84A4A1;*/
-    border-color: hsl(173, 100%, 24%);
-    margin-left: 5rem;  
+   border-color: hsl(173, 100%, 24%); 
     font-family: "Montserrat";
     color:black;
 }
 .form button{
-    margin-left: 9rem;
+    font-family: "Montserrat";
     border: none;
     background-color: hsl(173, 100%, 24%);
     color: #fff;
@@ -48,38 +58,35 @@ header {
     cursor: pointer;
     width: 50%;
         height: 45px;
-        font-family: arial;
         border-radius: 50px;
-          font-family: "Montserrat";
+          margin-bottom: 25px;
+          margin-top: 25px;
 }
 main {
     width: 99%;
    padding: 2px;
     background-color: rgb(231, 246, 244);
-    font-size: 15px;
-    font-family: arial;
     padding-top: 23px;
-    /*border-left: 4px;
-    border-right: 4px;*/
     border-width: 4px;
     border-style: solid;
     border-color: hsl(173, 100%, 24%);
     padding-bottom: 35px;
+    font-family: "Montserrat"
 }
 
-p {
-     text-align: center;
-    font-family: "Montserrat";
-}
 .lastdiv{
     background-color:#84A4A1;
-    font-family: "Montserrat";
-    height: 15px;
+    height: 10px;
     padding: 10px;
     display: none;
     width: 80%;
-    margin-left: 3rem;
     text-align: center;
-    color:rgb(12, 12, 12)
+    color:rgb(12, 12, 12)}
     /*border: 1px dashed rgb(255, 0, 8);*/
+
+
+
+ p {
+    text-align: center;
+   font-family: "Montserrat";
 }

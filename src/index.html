@@ -9,22 +9,20 @@
   </head>
   <body>
     <header>
-    <h1>"COMPRUEBA LA VALIDEZ DE TU TARJETA AHORA"</h1>
+    <h1>COMPRUEBA  LA VALIDEZ DE <br>
+      TU TARJETA  AHORA</h1>
     </header>
      <main> <!---Formulario -->
       <form class="form" id="myForm">
-            <label >Número de tarjeta: </label>
-            <input  type="text" name="number" id="cardnumber" placeholder="0000000000000000" maxlength="16">
-            <label >Ingrese su nombre:</label>
+            <label>Número de tarjeta: </label>
+            <input  type="text" name="number" id="cardnumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="16">
+            <label>Ingrese su nombre:</label>
             <input maxlength="25"  type="text" >
-            <label > Expiracion </label> 
-            <input   type="month" placeholder="Mes" >
-            <label >Ccv</label> 
-            <input  maxlength="5" placeholder="00000" type="text">
-            <br>
-            <br>
+            <label> Expiracion: </label> 
+            <input type="month" placeholder="Mes" >
+            <label > Ccv:</label> 
+            <input  maxlength="4" placeholder="XXXX" type="text">
             <button  type="submit" id="btnvalidate"> Validar </button>
-            <p> El campo <strong>Número de tarjeta</strong> es obligatorio, los demás campos son opcionales. </p>
             <div  class="lastdiv"   id="result"></div><br>
             <div class="lastdiv"  id="maskify"></div>
       </form>
