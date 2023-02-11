@@ -1,78 +1,85 @@
 html{
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
     max-width: 600px;
     padding: 15px;
     margin: 0 auto;
-    background: rgb(254, 214, 225)
+    background: #84A4A1;
 }
 header {
-     background-color: rgb(236, 65, 122);
+     background-color: hsl(173, 100%, 24%);
     color: #fff;
     text-align: center;
-    font-family: system-ui;
-    height: 70px;
-    margin: 0.2rem;
+    font-family: "Patua One", serif;
+    /*height: 70px;*/
     padding: 15px;
-    font-size: 11px;
-    
+    font-size: 13px;
+    margin-right: -6px;
+    /*border-right: 4px;*/
+    /*border-color: hsl(173, 100%, 24%);*/
+    /*margin-right: -5.6px;*/
+   /* padding-bottom: 35px;*/
+}
     /*border-radius: 20px;
    line-height: 22px;*/
-    
-}
+
 .form label{
-    margin: 14rem;
+    margin : 14rem;
+    font-family:"Nunito Sans" ;
+    color: black;
 }
 .form input{
     width: 70%;
     height: 33px;
     margin: 0.7rem;
     text-align: center;
-    /*border-radius: 50px;*/
-    background-color: rgb(254, 214, 225);
-    border-color: rgb(236, 65, 122);
-    /*border: none;*/
+    /*background-color:#84A4A1;*/
+    border-color: hsl(173, 100%, 24%);
     margin-left: 5rem;  
+    font-family: "Montserrat";
+    color:black;
 }
 .form button{
     margin-left: 9rem;
     border: none;
-    background-color: rgb(236, 65, 122);
+    background-color: hsl(173, 100%, 24%);
     color: #fff;
+    font-size: 15px;
     cursor: pointer;
     width: 50%;
         height: 45px;
         font-family: arial;
         border-radius: 50px;
-        
+          font-family: "Montserrat";
 }
 main {
-    
     width: 99%;
-    height: 520px;
-padding: 2px;
- background-color:rgb(255, 242, 244);
+   padding: 2px;
+    background-color: rgb(231, 246, 244);
     font-size: 15px;
     font-family: arial;
-
-    
+    padding-top: 23px;
+    /*border-left: 4px;
+    border-right: 4px;*/
+    border-width: 4px;
+    border-style: solid;
+    border-color: hsl(173, 100%, 24%);
+    padding-bottom: 35px;
 }
 
-p { 
-    text-align: center;
+p {
+     text-align: center;
+    font-family: "Montserrat";
 }
-
 .lastdiv{
-    background-color:pink;
-    font-family: arial;
-    height: 10px;
-    /*margin: 0.2rem;*/
+    background-color:#84A4A1;
+    font-family: "Montserrat";
+    height: 15px;
     padding: 10px;
-    color: rgb(12, 11, 11);
     display: none;
     width: 80%;
     margin-left: 3rem;
     text-align: center;
-    
+    color:rgb(12, 12, 12)
     /*border: 1px dashed rgb(255, 0, 8);*/
 }
