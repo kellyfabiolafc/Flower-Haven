@@ -41,4 +41,53 @@ describe('validator', () => {
       expect(validator.maskify('helloworld')).toBe('######orld');
     });
   });
+  describe("getBrand", () => {
+    test("Debería identificar una tarjeta Visa", () => {
+      const creditCardNumber = "4111 1111 1111 1111";
+      const expectedResult = "Visa";
+      // eslint-disable-next-line no-undef
+      const result = getBrand(creditCardNumber);
+      expect(result).toBe(expectedResult);
+    });
+  
+    test("Debería identificar una tarjeta Mastercard", () => {
+      const creditCardNumber = "5105 1051 0510 5100";
+      const expectedResult = "Mastercard";
+      // eslint-disable-next-line no-undef
+      const result = getBrand(creditCardNumber);
+      expect(result).toBe(expectedResult);
+    });
+  
+    test("Debería identificar una tarjeta American Express", () => {
+      const creditCardNumber = "3400 0000 0000 009";
+      const expectedResult = "American Express";
+      // eslint-disable-next-line no-undef
+      const result = getBrand(creditCardNumber);
+      expect(result).toBe(expectedResult);
+    });
+  
+    test("Debería identificar una tarjeta Discover", () => {
+      const creditCardNumber = "6011 1111 1111 1117";
+      const expectedResult = "Discover";
+      // eslint-disable-next-line no-undef
+      const result = getBrand(creditCardNumber);
+      expect(result).toBe(expectedResult);
+    });
+  
+    test("Debería identificar una tarjeta JCB", () => {
+      const creditCardNumber = "3566 1111 1111 1113";
+      const expectedResult = "JCB";
+      // eslint-disable-next-line no-undef
+      const result = getBrand(creditCardNumber);
+      expect(result).toBe(expectedResult);
+    });
+  
+    test("Debería identificar una tarjeta desconocida", () => {
+      const creditCardNumber = "1234 5678 9101 1121";
+      const expectedResult = "Desconocido";
+      // eslint-disable-next-line no-undef
+      const result = getBrand(creditCardNumber);
+      expect(result).toBe(expectedResult);
+    });
+  });
 });
