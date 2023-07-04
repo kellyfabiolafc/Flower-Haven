@@ -1,4 +1,5 @@
 import validator from './validator.js';
+const sectionAll = document.querySelectorAll('section[id]');
 //Este código  utiliza el DOM (Document Object Model) para manipular elementos HTML.
 const input = document.getElementById("cardnumber");
 input.addEventListener("input", function() {
@@ -25,25 +26,51 @@ form.addEventListener("submit", function(event) {//La función comprueba si el c
     if (valid){  
 
       alert("Genial, el número de  tarjeta insertada  es correcta" )
-      document.getElementById("result").style.display="block";
-      document.getElementById("maskify").style.display="block";
-      document.getElementById("brand").style.display="block";
-      document.getElementById("result").innerHTML = 'Tarjeta valida: ';
-      document.getElementById("brand").innerHTML = 'Franquicia: '+ brand;
-      document.getElementById("maskify").innerHTML = maskify;
-     
+      const elemento = document.querySelector("#resultadoFinal");
+      const resultado = document.createElement("p");
+      const franquicia = document.createElement("p");
+      const enmascaramiento = document.createElement("p");
+
+      resultado.textContent = "Tarjeta Valida";
+      franquicia.textContent = "Franquicia: " + brand;
+      enmascaramiento.textContent = maskify;
+
+      elemento.appendChild(resultado);
+      elemento.appendChild(franquicia);
+      elemento.appendChild(enmascaramiento);
     }
     else {
       // Show error message in div#result
       alert( "Lo sentimos,intente con otro número de tarjeta" );
-      document.getElementById("result").style.display="block";
-      document.getElementById("maskify").style.display="block";
-      document.getElementById("brand").style.display="block";
-      document.getElementById("result").innerHTML = 'Tarjeta invalida: ';
-      document.getElementById("brand").innerHTML = 'Franquicia: '+ brand;
-      document.getElementById("maskify").innerHTML = maskify;
-      
+      const elemento = document.querySelector("#resultadoFinal");
+      const resultado = document.createElement("p");
+      const franquicia = document.createElement("p");
+      const enmascaramiento = document.createElement("p");
+
+      resultado.textContent = "Tarjeta Invalida";
+      franquicia.textContent = "Franquicia: " + brand;
+      enmascaramiento.textContent = maskify;
+
+      elemento.appendChild(resultado);
+      elemento.appendChild(franquicia);
+      elemento.appendChild(enmascaramiento);
     }
   }
   //}
+});
+
+// Obtén todos los enlaces del menú
+const menuLinks = document.querySelectorAll('nav ul li a');
+
+// Recorre los enlaces y agrega el evento click
+menuLinks.forEach((link) => {
+  link.addEventListener('click', (event) => {
+    // Elimina la clase activa de todos los enlaces
+    menuLinks.forEach((link) => {
+      link.classList.remove('active');
+    });
+        
+    // Agrega la clase activa al enlace actual
+    event.target.classList.add('active');
+  });
 });

@@ -1,90 +1,347 @@
-html{
-    /*height: 100%;*/
-    width: 100%;
-    max-width: 600px;
-    padding: 15px;
-    margin: 0 auto;
-    background: #84A4A1;
+@font-face {
+    font-family: 'Cooper Hewitt';
+    src: url('./fonts/CooperHewitt-Light.woff') format('woff'),
+    url('./fonts/CooperHewitt-Thin.woff') format('woff');
+}
+:root{
+ --color-primario : #AA964E;
+ --color-secundario: #CFC39B;
+ --color-pastel : #F3BB99;
+ --color-blanco : #FFFFFF;
+ --color-marron : #4C4027;
+ --color-beige : #A28E77;
 }
 
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para el header */
 header {
-     background-color: hsl(173, 100%, 24%);
-    color: #fff;
+    padding: 15px 20px 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+    backdrop-filter: blur(1rem);
+    align-items: center;
+}
+.contenedorLogo img{
+    width: 4.5rem;
+}
+nav{
+    margin-right: 10%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-blanco);
+    letter-spacing: .2rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Cooper Hewitt';
+    font-weight: 800;
+}
+ nav ul li a.active {
+    color: var(--color-pastel);
+    padding: 0.5rem;
+    transition: all .5s;
+    border-bottom: 1px solid var(--color-pastel);
+    text-decoration: var(--color-primario);
+  
+}
+
+/*seccion de inicio */
+.homeSection {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.home{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    font-family: "Patua One", serif;
-    /*height: 70px;*/
-    padding: 15px;
-    font-size: 13px;
-    margin-right: -6px;}
-    /*border-right: 4px;*/
-    /*border-color: hsl(173, 100%, 24%);*/
-    /*margin-right: -5.6px;*/
-   /* padding-bottom: 35px;*/
-
-    /*border-radius: 20px;
-   line-height: 22px;*/
-
-/*.firtsLabel{
-    margin : 14rem;
-    font-family:"Nunito Sans" ;
-    color: black;
+    padding-left: 6rem;
+    margin-top: 6rem;
 }
-#penultimateDiv{
-    margin : 16rem;
+
+.container_text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: .2rem;
+    text-align: start;
 }
-#lastLabel{
-    margin : 17rem;
-}*/
-#myForm{
+.home_text-1 {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+    font-weight: bold;
+    color: var(--color-blanco);
+    font-family: 'Cooper Hewitt';
+}
+.home_text-2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-blanco);
+    font-family: 'PT Sans';
+}
+.home_text-3 {
+    margin: 0 0 2rem 0;
+    font-size: 1.8rem;
+    width: 35rem;
+    letter-spacing: .2rem;
+    text-align: start;
+    color: var(--color-blanco);
+}
+.container_parrafo-info p {
+    font-family: 'Cooper Hewitt';
+    color: var(--color-secundario);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+.button-home {
+    display: inline-block;
+    background-color: var(--color-blanco);
+    border-radius: 3rem;
+    padding: 0.7rem 4rem 0.6rem 4rem;
+    color: var(--color-primario);
+    font-family: 'Cooper Hewitt';
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin: 2rem 0 2rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+.banner-home {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: center;
+}
+.container_parrafo-info p {
+    font-family: 'Cooper Hewitt';
+    color: var(--color-blanco);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    text-align: start;
+}
+/* Estilos para las secciones */
+/* section {
+    padding: 50px;
+} */
+
+h2 {
+    color: #333;
+}
+
+/* Estilos para la sección de membresía */
+.membership-details {
+    margin-top: 20px;
+}
+
+/* Seccion  productos */
+.productos{
+    background-color: var(--color-beige);
     display: flex;
     flex-direction: column;
     align-items: center;
- }
-.form input{
-    width: 70%;
-    height: 33px;
-    margin: 0.7rem;
-    text-align: center;
-   border-color: hsl(173, 100%, 24%); 
-    font-family: "Montserrat";
-    color:black;
+    padding-bottom: 4rem;
 }
-.form button{
-    font-family: "Montserrat";
-    border: none;
-    background-color: hsl(173, 100%, 24%);
-    color: #fff;
-    font-size: 15px;
-    cursor: pointer;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin-top: 10px;
+  }
+  
+  .card p {
+    color: #888;
+  }
+  
+/*section membresia */
+
+h1{
+    margin-top: 6rem;
+    font-size: 3rem;
+}
+.membresía {
+
+    padding: 50px;
+    padding: 50px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    height: 100vh;
+    background-color: var(--color-marron);
+    display: flex;
+}
+
+.membership-details {
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.client-name {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.exclusive-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+}
+/*FORMULARIO*/
+.membership-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: var(--color-beige);
+    padding-bottom: 4rem;
+}
+.contenedor-formulario{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+.container--contacto {
     width: 50%;
-        height: 45px;
-        border-radius: 50px;
-          margin-bottom: 25px;
-          margin-top: 25px;
+    background-color: var(--color-pastel);
+    border-radius: 24px;
+    padding: 1rem 3rem;
+    position: relative;
+    
 }
-main {
-    width: 99%;
-   padding: 2px;
-    background-color: rgb(231, 246, 244);
-    padding-top: 23px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: hsl(173, 100%, 24%);
-    padding-bottom: 35px;
-    font-family: "Montserrat"
+.container_text--contacto {
+    width: 100%;
 }
 
-.lastdiv{
-    background-color:#84A4A1;
-    height: 10px;
-    padding: 10px;
-    display: none;
-    width: 80%;
-    text-align: center;
-    color:rgb(12, 12, 12)}
-    /*border: 1px dashed rgb(255, 0, 8);*/
+.container_text--contacto p {
+    font-size: 1.6rem;
+    font-family: 'Cooper Hewitt';
+    color: var(--color-blanco);
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    line-height: 2.3rem;
+}
 
- p {
-    text-align: center;
-   font-family: "Montserrat";
+.form input {
+    font-family: 'Cooper Hewitt';
+    background: transparent;
+    border: 1px solid var(--color-primario);
+    width: 100%;
+    border-radius: 1rem;
+    color: var(--color-blanco);
+    font-size: 1.6rem;
+    outline: none;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+.btn_form--contacto {
+    display: flex;
+    justify-content: center;
+}
+.validate{
+
+    background: #5C715E;
+    border: none;
+    font-family: 'Cooper Hewitt';
+    width: 20rem;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    color: var(--white);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s all;
+}
+.validate:hover{
+        background: #5C715E;
+        color: var(--black);
+        font-weight: bold;
+        transform: scale(1.1);
+        box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
+        transition: all .4s ease;
+}
+/*QUIENES SOMOS*/
+.quienes-somos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-beige);
 }

@@ -2,37 +2,187 @@
 <html>
   <head>
     <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width" initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width initial-scale=1">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Nunito Sans|Fjalla One|Jost|Amatic SC|Trirong|Bebas Neue|Patua One|
     Noto Serif Khojki">
     <link rel="stylesheet" href="style.css" />
+      <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
-    <h1>VALIDACIÓN SEGURA DE TARJETAS </h1>
-    </header>
-     <main> <!---Formulario -->
-      <form class="form" id="myForm">
-            <label>Número de tarjeta: </label>
-            <input  type="text" name="number" id="cardnumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="16">
-            <label>Ingrese su nombre:</label>
-            <input maxlength="25"  type="text" >
-            <label> Expiracion: </label> 
-            <input type="month" placeholder="Mes" >
-            <label > Cvv:</label> 
-            <input  maxlength="4" placeholder="XXXX" type="text">
-            <button  type="submit" id="btnvalidate"> Validar </button>
-            <div  class="lastdiv"   id="result"></div>
-            <div  class="lastdiv"   id="brand"></div>
-            <div class="lastdiv"  id="maskify"></div>
+      <picture class="contenedorLogo">
+        <img src="images/logo-flores.png">
+      </picture>
+      <nav>
+          <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#products">Productos</a></li>
+              <li><a href="#membership">Membresía</a></li>
+              <li><a href="#about">Acerca de</a></li>
+          </ul>
+      </nav>
+  </header>
 
-      </form>
-      </main>
-      <footer>
-      <p>Copyright © 2023 Kelly</p>
-      </footer>
+  <section class="homeSection" id="home">
+   <img class="banner-home" src="/images/amo.jpg">
+    <div class="home">
+        <div class="container_text-info">
+            <p class="home_text-1">Hola! Somos</p>
+            <p class="home_text-2">FlowerHaven</p>
+        </div>
+
+        <div>
+            <p class="home_text-3 text-type" data-section="home" data-value="home_text-3">Floreria</p>
+        </div>
+
+        <div class="container_parrafo-info">
+            <p data-section="home" data-value="parrafo-info">Tus flores favoritas, a un clic de distancia.
+              Descubre la magia floral en FlowerHaven, donde encontrarás una amplia selección de flores frescas para cada ocasión. Únete a nuestra membresía y disfruta de beneficios exclusivos. Deja que la belleza de las flores te envuelva en FlowerHaven.</p>
+        </div>
+
+        <div class="container_button">
+                <button class="button-home" data-section="home" data-value="cv_button">Suscribirme </button>      
+        </div>
+    </div>
+  </section>
+
+  <section id="products" class="productos">
+      <h1>Nuestros productos</h1>
+      <div class="card-container">
+        <div class="card">
+          <img src="./images/11.png" alt="Descripción de la imagen 1">
+          <h3>Beautiful Roses</h3>
+          <p>$25 - $35</p>
+        </div>
+        <div class="card">
+          <img src="./images/12.png" alt="Descripción de la imagen 2">
+          <h3>Crimson Collection</h3>
+          <p>$30 - $40</p>
+        </div>
+        <div class="card">
+          <img src="./images/13.png" alt="Descripción de la imagen 1">
+          <h3>Dulces sueños</h3>
+          <p>$35 - $45</p>
+        </div>
+        <div class="card">
+          <img src="./images/7.png" alt="Descripción de la imagen 2">
+          <h3>Fantasía tropical</h3>
+          <p>$15 - $20</p>
+        </div>
+        <div class="card">
+          <img src="./images/8.png" alt="Descripción de la imagen 1">
+          <h3>Encanto floral</h3>
+          <p>$50 - $60</p>
+        </div>
+        <div class="card">
+          <img src="./images/9.png" alt="Descripción de la imagen 2">
+          <h3>Tulipán</h3>
+          <p>$40 - $50</p>
+        </div>
+        <div class="card">
+          <img src="./images/14.png" alt="Descripción de la imagen 2">
+          <h3>Belleza primaveral</h3>
+          <p>$35 - $45</p>
+        </div>
+        <div class="card">
+          <img src="./images/10.png" alt="Descripción de la imagen 2">
+          <h3>Serenidad eterna</h3>
+          <p>$18 - $25</p>
+        </div>
+        <!-- Agrega más tarjetas aquí -->
+      </div>
+      
+      <!-- Aquí puedes mostrar los productos de la tienda -->
+  </section>
+
+    <section id="membership" class="membresía">
+      <h1>Membresía</h1>
+      <p>Obtén los beneficios de nuestra membresía especial para clientes frecuentes.</p>
+      <div class="membership-details">
+          <h3>Beneficios de la membresía:</h3>
+          <ul>
+              <li>Descuentos exclusivos en todos nuestros productos.</li>
+              <li>Envío gratuito en todas las compras.</li>
+              <li>Acceso prioritario a nuevos productos y promociones.</li>
+          </ul>
+          <p>¡Obtén tu membresía ahora por solo $29.99 al mes!</p>
+          <a href="#membership-form" class="btn-membership">Comprar Membresía</a>
+      </div>
+      <div class="testimonials">
+          <h3>Testimonios de nuestros miembros:</h3>
+          <div class="testimonial">
+              <img src="img/client1.jpg" alt="Cliente 1">
+              <p>"La membresía ha sido una gran inversión. Los descuentos y el envío gratuito hacen que valga la pena cada centavo."</p>
+              <p class="client-name">- María Rodríguez</p>
+          </div>
+          <div class="testimonial">
+              <img src="img/client2.jpg" alt="Cliente 2">
+              <p>"¡Increíbles productos y servicio al cliente excepcional! Estoy encantado de ser miembro."</p>
+              <p class="client-name">- Juan Pérez</p>
+          </div>
+      </div>
+      <div class="exclusive-products">
+          <h3>Productos exclusivos para miembros:</h3>
+          <div class="product">
+              <img src="img/product1.jpg" alt="Producto 1">
+              <h4>Ramo de Flores Especial</h4>
+              <p class="price">$19.99</p>
+          </div>
+          <div class="product">
+              <img src="img/product2.jpg" alt="Producto 2">
+              <h4>Ramo de Rosas Premium</h4>
+              <p class="price">$24.99</p>
+          </div>
+      </div>
+  </section>
+  
+
+
+  <section id="membership-form" class="membership-form">
+      <h1>Formulario de Membresía</h1>
+      <div class="contenedor-formulario">
+        <div class="container--contacto">  
+        <div class="container_text--contacto">
+      <p>Completa el formulario a continuación para finalizar tu membresía:</p>
+    </div>
+      <form class="form" id="myForm">
+        <label>Número de tarjeta: </label>
+        <input  type="text" name="number" id="cardnumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="16">
+        <label>Ingrese su nombre:</label>
+        <input maxlength="25"  type="text" >
+        <label> Expiracion: </label> 
+        <input type="month" placeholder="Mes" >
+        <label> Cvv:</label> 
+        <input  maxlength="4" placeholder="XXXX" type="text">
+        <div class="btn_form--contacto">
+        <button  type="submit" id="btnvalidate" class="validate"> Validar </button>
+      </div>
+        <div  id="resultadoFinal" class="resultado" >
+          <p    id="result" > </p>
+        <p    id="brand"></p>
+        <p   id="maskify"></p>
+      </div>
+  </form>
+  </div>
+</div>
+  </section>
+
+  <section id="about" class="quienes-somos">
+    <div class="container">
+        <h1>Quiénes Somos</h1>
+        <p>Somos una florería dedicada a brindar hermosos arreglos florales para cada ocasión.</p>
+        <p>Nuestro equipo de floristas expertos selecciona cuidadosamente las flores más frescas y de alta calidad para crear diseños únicos y elegantes.</p>
+        <p>Nos apasiona crear arreglos florales que transmitan emociones y alegría a nuestros clientes.</p>
+        <p>En nuestra florería, nos esforzamos por ofrecer un servicio excepcional y hacer que cada experiencia de compra sea memorable.</p>
+    </div>
+</section>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
-
-
