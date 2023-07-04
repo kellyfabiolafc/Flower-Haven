@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-
+    <!-- icono -->
+    <link rel="shortcut icon" href="./images/logo-nav.png" type="image/x-icon">
   </head>
   <body>
     <header>
@@ -47,7 +48,7 @@
         </div>
 
         <div class="container_button">
-                <button class="button-home" data-section="home" data-value="cv_button">Suscribirme </button>      
+                <a href="#membership-form"><button class="button-home" data-section="home" data-value="cv_button">Suscribirme </button> </a>     
         </div>
     </div>
   </section>
@@ -103,8 +104,9 @@
 
     <section id="membership" class="membresía">
       <h1>Membresía</h1>
-      <p>Obtén los beneficios de nuestra membresía especial para clientes frecuentes.</p>
+      <div class="contenedor-membresía-details">
       <div class="membership-details">
+        <p>Obtén los beneficios de nuestra membresía especial para clientes frecuentes.</p>
           <h3>Beneficios de la membresía:</h3>
           <ul>
               <li>Descuentos exclusivos en todos nuestros productos.</li>
@@ -114,32 +116,37 @@
           <p>¡Obtén tu membresía ahora por solo $29.99 al mes!</p>
           <a href="#membership-form" class="btn-membership">Comprar Membresía</a>
       </div>
+      <div class="contenedor-testimonios-beneficios">
       <div class="testimonials">
-          <h3>Testimonios de nuestros miembros:</h3>
-          <div class="testimonial">
-              <img src="img/client1.jpg" alt="Cliente 1">
-              <p>"La membresía ha sido una gran inversión. Los descuentos y el envío gratuito hacen que valga la pena cada centavo."</p>
-              <p class="client-name">- María Rodríguez</p>
-          </div>
-          <div class="testimonial">
-              <img src="image/client2.jpg" alt="Cliente 2">
-              <p>"¡Increíbles productos y servicio al cliente excepcional! Estoy encantado de ser miembro."</p>
-              <p class="client-name">- Juan Pérez</p>
-          </div>
-      </div>
+        <h3>Testimonios de nuestros miembros:</h3>
+        <div class="testimonial">
+            <img src="./images/personas.png" alt="Cliente 1">
+            <p>"La membresía ha sido una gran inversión. Los descuentos y el envío gratuito hacen que valga la pena cada centavo."</p>
+            <p class="client-name">- María Rodríguez</p>
+        </div>
+        <div class="testimonial">
+            <img src="./images/personas (1).png" alt="Cliente 2">
+            <p>"¡Increíbles productos y servicio al cliente excepcional! Estoy encantado de ser miembro."</p>
+            <p class="client-name">- Juan Pérez</p>
+        </div>
+    </div>
       <div class="exclusive-products">
           <h3>Productos exclusivos para miembros:</h3>
+          <div class="container-exclusive-products">
           <div class="product">
-              <img src="img/product1.jpg" alt="Producto 1">
+              <img src="./images/flores (2).png" alt="Producto 1">
               <h4>Ramo de Flores Especial</h4>
               <p class="price">$19.99</p>
           </div>
           <div class="product">
-              <img src="img/product2.jpg" alt="Producto 2">
+              <img src="./images/flores (1).png" alt="Producto 2">
               <h4>Ramo de Rosas Premium</h4>
               <p class="price">$24.99</p>
           </div>
+        </div>
       </div>
+    </div>
+    </div>
   </section>
   
 
@@ -174,14 +181,32 @@
   </section>
 
   <section id="about" class="quienes-somos">
+    <h1>Quiénes Somos</h1>
     <div class="container">
-        <h1>Quiénes Somos</h1>
-        <p>Somos una florería dedicada a brindar hermosos arreglos florales para cada ocasión.</p>
-        <p>Nuestro equipo de floristas expertos selecciona cuidadosamente las flores más frescas y de alta calidad para crear diseños únicos y elegantes.</p>
-        <p>Nos apasiona crear arreglos florales que transmitan emociones y alegría a nuestros clientes.</p>
-        <p>En nuestra florería, nos esforzamos por ofrecer un servicio excepcional y hacer que cada experiencia de compra sea memorable.</p>
+        <div class="content">
+            <div class="description">
+                <p>Somos una florería dedicada a brindar hermosos arreglos florales para cada ocasión.</p>
+                <p>Nuestro equipo de floristas expertos selecciona cuidadosamente las flores más frescas y de alta calidad para crear diseños únicos y elegantes.</p>
+                <p>Nos apasiona crear arreglos florales que transmitan emociones y alegría a nuestros clientes.</p>
+                <p>En nuestra florería, nos esforzamos por ofrecer un servicio excepcional y hacer que cada experiencia de compra sea memorable.</p>
+            </div>
+            <div class="photo">
+                <img src="./images/equipo.png" alt="Foto del equipo" />
+            </div>
+        </div>
+        <div class="values">
+            <h2>Nuestros Valores</h2>
+            <ul>
+                <li>Calidad: Nos comprometemos a utilizar las flores más frescas y de alta calidad en nuestros arreglos.</li>
+                <li>Creatividad: Buscamos la belleza y la originalidad en cada uno de nuestros diseños florales.</li>
+                <li>Servicio al Cliente: Brindamos una atención personalizada y nos esforzamos por superar las expectativas de nuestros clientes.</li>
+                <li>Sostenibilidad: Promovemos prácticas respetuosas con el medio ambiente en nuestra florería.</li>
+                <li>Pasión por las Flores: Amamos lo que hacemos y nos enorgullece compartir nuestra pasión por las flores con nuestros clientes.</li>
+            </ul>
+        </div>
     </div>
 </section>
+
 
     <script src="index.js" type="module"></script>
   </body>

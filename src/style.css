@@ -19,15 +19,19 @@ body{
 
 /* Estilos para el header */
 header {
-    padding: 15px 20px 0;
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
     box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
     backdrop-filter: blur(1rem);
     align-items: center;
+    padding: 0.8rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
 }
 .contenedorLogo img{
     width: 4.5rem;
@@ -133,7 +137,7 @@ nav ul li a {
 }
 .banner-home {
     width: 100%;
-    height: 100vh;
+    min-height: 200vh;
     position: absolute;
     z-index: -1;
     left: 0;
@@ -165,6 +169,7 @@ h2 {
 
 /* Seccion  productos */
 .productos{
+    padding: 50px;
     background-color: var(--color-beige);
     display: flex;
     flex-direction: column;
@@ -206,29 +211,82 @@ h2 {
 h1{
     margin-top: 6rem;
     font-size: 3rem;
+    font-family: 'Cooper Hewitt';
+    color: var(--color-blanco);
 }
 .membresía {
 
     padding: 50px;
-    padding: 50px;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
-    height: 100vh;
     background-color: var(--color-marron);
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.membresía h3{
+    font-family: 'Cooper Hewitt';
+    color: var(--color-pastel);
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: start;
+}
+.contenedor-membresía-details{
+     display: flex;
+     
 
+}
+.contenedor-membresía-details p{
+    color: var(--color-blanco);
+    font-family: 'Cooper Hewitt';
+    font-size: 1rem;
+    letter-spacing: .03rem;
+    white-space: pre-line;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+.contenedor-testimonios-beneficios{
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+    width: 50%;
+
+}
+.contenedor-testimonios-beneficios h4{
+    color: var(--color-blanco);
+    font-family: 'Cooper Hewitt';
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.container-exclusive-products{
+    display: flex;
+    justify-content: space-evenly;
+}
 .membership-details {
     margin-bottom: 30px;
+    width: 50%;
+    padding: 0 80px;
+    height: 50%;
 }
-
-.testimonials {
+.membership-details ul li {
+    color: var(--color-blanco);
+    font-family: 'Cooper Hewitt';
+    font-size: 1rem;
+    letter-spacing: .03rem;
+    white-space: pre-line;
+    text-align: justify;
+    line-height: 2.2rem;
+}
+/* .testimonials {
     margin-bottom: 30px;
-}
+} */
 
 .testimonial {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .testimonial img {
@@ -246,6 +304,7 @@ h1{
 .exclusive-products {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .product {
@@ -263,28 +322,32 @@ h1{
 .price {
     font-weight: bold;
 }
+/* MEMBRESIA /*
+
 /*FORMULARIO*/
 .membership-form{
+    padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: auto;
-    background-color: var(--color-beige);
+    background-color: var(--color-primario);
     padding-bottom: 4rem;
 }
 .contenedor-formulario{
-    margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
 
     
 }
 .container--contacto {
-    width: 50%;
-    background-color: var(--color-pastel);
+    max-width: 500px;
+    background-color: var(--color-secundario);
     border-radius: 24px;
     padding: 1rem 3rem;
     position: relative;
+    margin: 20px;
+   
     
 }
 .container_text--contacto {
@@ -300,6 +363,7 @@ h1{
     line-height: 2.3rem;
 }
 
+
 .form input {
     font-family: 'Cooper Hewitt';
     background: transparent;
@@ -309,7 +373,7 @@ h1{
     color: var(--color-blanco);
     font-size: 1.6rem;
     outline: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     letter-spacing: 1px;
 }
 .btn_form--contacto {
@@ -319,14 +383,17 @@ h1{
 .validate{
 
     background: #5C715E;
+    height: 48px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
     border: none;
-    font-family: 'Cooper Hewitt';
-    width: 20rem;
-    padding: 0.8rem 1rem;
-    border-radius: 1rem;
-    color: var(--white);
-    font-size: 1.8rem;
-    letter-spacing: 1px;
+    background-color: #A5BC34;
+    color: #fdfffd;
     cursor: pointer;
     transition: 1s all;
 }
@@ -340,8 +407,54 @@ h1{
 }
 /*QUIENES SOMOS*/
 .quienes-somos{
-    height: 100vh;
+    padding: 50px;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     background-color: var(--color-beige);
+    align-items: center;
+    flex-direction: column;
 }
+.container {
+    /* max-width: 950px; Ajusta el ancho máximo del contenedor según tus preferencias */
+    max-width: 100em;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .description {
+    flex: 1;
+    padding-right: 20px; /* Ajusta el espaciado derecho entre la descripción y la foto según tus preferencias */
+  }
+  
+  .photo {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .photo img {
+    width: 100%; /* Ajusta el tamaño de la imagen según tus preferencias */
+    max-width: 400px; /* Ajusta el ancho máximo de la imagen según tus preferencias */
+    border-radius: 10px; /* Aplica bordes redondeados si deseas */
+  }
+  
+  .values {
+    margin-top: 40px; /* Ajusta el espaciado superior entre los valores y el resto del contenido según tus preferencias */
+  }
+  
+  .values h2 {
+    margin-bottom: 10px;
+  }
+  
+  .values ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
