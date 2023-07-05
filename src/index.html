@@ -114,7 +114,7 @@
               <li>Acceso prioritario a nuevos productos y promociones.</li>
           </ul>
           <p>¡Obtén tu membresía ahora por solo $29.99 al mes!</p>
-          <a href="#membership-form" class="btn-membership">Comprar Membresía</a>
+          <a href="#membership-form" class="btn-membership"><button class="comprar-btn">Comprar Membresía</button></a>
       </div>
       <div class="contenedor-testimonios-beneficios">
       <div class="testimonials">
@@ -159,22 +159,23 @@
       <p>Completa el formulario a continuación para finalizar tu membresía:</p>
     </div>
       <form class="form" id="myForm">
-        <label>Número de tarjeta: </label>
-        <input  type="text" name="number" id="cardnumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="16">
-        <label>Ingrese su nombre:</label>
-        <input maxlength="25"  type="text" >
-        <label> Expiracion: </label> 
-        <input type="month" placeholder="Mes" >
-        <label> Cvv:</label> 
-        <input  maxlength="4" placeholder="XXXX" type="text">
+        <input  type="text" name="number" id="cardnumber" placeholder="Número de tarjeta" maxlength="16">
+        <input maxlength="25"  type="text" placeholder="Nombre Apellido" >
+        <input type="month" placeholder="MM/AA" >
+        <input  maxlength="3" placeholder="123" type="text">
         <div class="btn_form--contacto">
-        <button  type="submit" id="btnvalidate" class="validate"> Validar </button>
+        <button  type="submit" id="btnvalidate" class="validate"> Enviar </button>
       </div>
-        <div  id="resultadoFinal" class="resultado" >
+      <div class="modal">
+        <div class="modal-content">
+        <span class="close" style="color: #565255;">&times;</span>
+        </div>
+        </div>`;
+        <!-- <div  id="resultadoFinal" class="resultado" >
           <p    id="result" > </p>
         <p    id="brand"></p>
         <p   id="maskify"></p>
-      </div>
+      </div> -->
   </form>
   </div>
 </div>
@@ -183,7 +184,7 @@
   <section id="about" class="quienes-somos">
     <h1>Quiénes Somos</h1>
     <div class="container">
-        <div class="content">
+        <div class="content-description">
             <div class="description">
                 <p>Somos una florería dedicada a brindar hermosos arreglos florales para cada ocasión.</p>
                 <p>Nuestro equipo de floristas expertos selecciona cuidadosamente las flores más frescas y de alta calidad para crear diseños únicos y elegantes.</p>
@@ -194,6 +195,7 @@
                 <img src="./images/equipo.png" alt="Foto del equipo" />
             </div>
         </div>
+        <div class="content-values">
         <div class="values">
             <h2>Nuestros Valores</h2>
             <ul>
@@ -204,6 +206,10 @@
                 <li>Pasión por las Flores: Amamos lo que hacemos y nos enorgullece compartir nuestra pasión por las flores con nuestros clientes.</li>
             </ul>
         </div>
+        <div class="photo1">
+          <img src="./images/equipo2.png" alt="Foto del equipo" />
+      </div>
+      </div>
     </div>
 </section>
 

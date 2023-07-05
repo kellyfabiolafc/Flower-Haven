@@ -1,5 +1,4 @@
 import validator from './validator.js';
-const sectionAll = document.querySelectorAll('section[id]');
 //Este código  utiliza el DOM (Document Object Model) para manipular elementos HTML.
 const input = document.getElementById("cardnumber");
 input.addEventListener("input", function() {
@@ -15,7 +14,7 @@ form.addEventListener("submit", function(event) {//La función comprueba si el c
   if (input.value.trim().length === 0) {
     // El campo está vacío, se detiene el envío del formulario
     event.preventDefault();
-    alert("El campo número de tarjeta no puede estar vacío");/*Si está vacío, se detiene el envío del formulario y 
+    openAlert("El campo número de tarjeta no puede estar vacío");/*Si está vacío, se detiene el envío del formulario y 
     se muestra una alerta al usuario indicando que el campo no puede estar vacío.*/
   }
   else { 
@@ -24,36 +23,19 @@ form.addEventListener("submit", function(event) {//La función comprueba si el c
     const brand= validator.getBrand(document.getElementById("cardnumber").value);
     event.preventDefault();
     if (valid){  
-
-      alert("Genial, el número de  tarjeta insertada  es correcta" )
-      const elemento = document.querySelector("#resultadoFinal");
-      const resultado = document.createElement("p");
-      const franquicia = document.createElement("p");
-      const enmascaramiento = document.createElement("p");
-
-      resultado.textContent = "Tarjeta Valida";
-      franquicia.textContent = "Franquicia: " + brand;
-      enmascaramiento.textContent = maskify;
-
-      elemento.appendChild(resultado);
-      elemento.appendChild(franquicia);
-      elemento.appendChild(enmascaramiento);
+      const validacion = "¡Felicitaciones! Tu suscripción se ha realizado exitosamente. Disfruta de todos los beneficios de nuestra membresía especial para clientes frecuentes.";
+      const franquicia = "Franquicia: " + brand;
+      const enmascaramiento  = maskify;
+      openModal(validacion,franquicia,enmascaramiento);
+      form.reset();
     }
     else {
       // Show error message in div#result
-      alert( "Lo sentimos,intente con otro número de tarjeta" );
-      const elemento = document.querySelector("#resultadoFinal");
-      const resultado = document.createElement("p");
-      const franquicia = document.createElement("p");
-      const enmascaramiento = document.createElement("p");
-
-      resultado.textContent = "Tarjeta Invalida";
-      franquicia.textContent = "Franquicia: " + brand;
-      enmascaramiento.textContent = maskify;
-
-      elemento.appendChild(resultado);
-      elemento.appendChild(franquicia);
-      elemento.appendChild(enmascaramiento);
+      const validacion = "Disculpa, pero parece que el número de tarjeta que has ingresado no es válido. Por favor, verifica nuevamente los detalles de tu tarjeta e intenta nuevamente.";
+      const franquicia = "Franquicia: " + brand;
+      const enmascaramiento  = maskify;
+      openModal(validacion,franquicia,enmascaramiento);
+      form.reset();
     }
   }
   //}
@@ -73,4 +55,41 @@ menuLinks.forEach((link) => {
     // Agrega la clase activa al enlace actual
     event.target.classList.add('active');
   });
+});
+
+//modal 
+
+const openModal = (message1, message2, message3) => {
+  const modalContent = document.querySelector('.modal-content');
+  // Crear los párrafos con los mensajes
+  const paragraphs = document.createElement('div');
+  paragraphs.innerHTML = `<p>${message1}</p><p>${message2}</p><p>${message3}</p>`;
+
+  // Agregar los párrafos al elemento .modal-content
+  modalContent.appendChild(paragraphs);
+
+  // Mostrar el modal
+  document.querySelector('.modal').style.display = 'block';
+};
+
+const openAlert= (message) => {
+  const modalContent = document.querySelector('.modal-content');
+  // Crear los párrafos con los mensajes
+  const paragraphs = document.createElement('div');
+  paragraphs.innerHTML = `<p>${message}</p>`;
+
+  // Agregar los párrafos al elemento .modal-content
+  modalContent.appendChild(paragraphs);
+
+  // Mostrar el modal
+  document.querySelector('.modal').style.display = 'block';
+}
+
+document.querySelector('.close').addEventListener('click', (e) => {
+  e.preventDefault();
+  const modalContent = document.querySelector('.modal-content');
+
+  // Eliminar los párrafos agregados dinámicamente
+  modalContent.innerHTML = '';
+  document.querySelector('.modal').style.display = 'none';
 });
