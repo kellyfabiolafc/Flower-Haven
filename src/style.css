@@ -15,6 +15,11 @@
 body{
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+}
+html{
+  scroll-behavior: smooth;
 }
 /* Estilos para la barra de scroll */
 body::-webkit-scrollbar {
@@ -53,7 +58,9 @@ header {
     left: 0;
     z-index: 1;
     transition: .5s;
+    
 }
+
 .contenedorLogo img{
     width: 4.5rem;
 }
@@ -91,18 +98,32 @@ nav ul li a {
 
 /*seccion de inicio */
 .homeSection {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-.home{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding-left: 6rem;
-    margin-top: 6rem;
+
+.home {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 6rem;
+  margin-top: 6rem;
+  position: relative; /* Añadir posición relativa para que .banner-home ocupe todo el ancho y alto */
+  overflow: hidden; /* Ocultar cualquier contenido que se desborde */
+}
+
+.banner-home {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%; /* Ajustar el ancho al 100% de la sección */
+  height: 100%; /* Ajustar el alto al 100% de la sección */
+  object-fit: cover;
+  object-position: center;
 }
 
 .container_text-info {
@@ -119,19 +140,34 @@ nav ul li a {
     color: var(--color-blanco);
     font-family: 'Cooper Hewitt';
 }
+
 .home_text-2 {
     font-size: 3rem;
     font-weight: bold;
     color: var(--color-blanco);
     font-family: 'PT Sans';
+    margin: 0;
 }
 .home_text-3 {
-    margin: 0 0 2rem 0;
-    font-size: 1.8rem;
-    width: 35rem;
-    letter-spacing: .2rem;
-    text-align: start;
+  font-family: 'Cooper Hewitt';
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  width: 28rem;
+  margin: 0 auto;
+  text-align: start;
     color: var(--color-blanco);
+    position: relative;
+}
+.home_text-3::after{
+  content: '|';
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  color: var(--color-beige);
+  background-color: var(--color-marron);
+  width: 100%;
+  animation: typing 4s steps(28) alternate infinite;
 }
 .container_parrafo-info p {
     font-family: 'Cooper Hewitt';
@@ -165,16 +201,16 @@ nav ul li a {
     transition: all .4s ease;
 }
 
-.banner-home {
+/* Definición de la animación "typing" */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
     width: 100%;
-    min-height: 200vh;
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    object-fit: cover;
-    object-position: center;
+  }
 }
+
 .container_parrafo-info p {
     font-family: 'Cooper Hewitt';
     color: var(--color-blanco);
@@ -588,10 +624,10 @@ h1{
   }
   .modal-content {
     background-color: var(--color-pastel);
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% 30px; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    max-width:500px ; /* Could be more or less, depending on screen size */
     border-radius: 24px;
   }
   .modal-content p{
@@ -602,17 +638,51 @@ h1{
     text-align: justify;
     line-height: 2.2rem;
   }
+
   .close {
-    color: #565255;
-    float: right;
+    color: #fbf9fa;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
   }
   
   .close:hover,
   .close:focus {
-    color: black;
+    color: rgb(252, 252, 252);
     text-decoration: none;
     cursor: pointer;
   }
+  h1{
+    text-align: center;
+  }
+  /*Styles for mobiles*/
+  @media screen and (max-width: 767px) {
+    .homeSection{
+      width: 100%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    }
+    .banner-home {
+      /* Ajustar el ancho para que se ajuste al tamaño de pantalla en dispositivos móviles */
+      width: 100vw;
+    }
   
+    .home {
+      /* Reducir el padding izquierdo en dispositivos móviles */
+      padding-left: 1rem;
+    }
+    .container_parrafo-info p{
+      display: none;
+    }
+    .contenedor-membresía-details{
+      flex-direction: column;
+      max-width: 400px;
+    }
+    .content-values {flex-direction: column;}
+  }
