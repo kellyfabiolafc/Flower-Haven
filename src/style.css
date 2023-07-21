@@ -1,53 +1,52 @@
 @font-face {
-    font-family: 'Cooper Hewitt';
-    src: url('./fonts/CooperHewitt-Light.woff') format('woff'),
-    url('./fonts/CooperHewitt-Thin.woff') format('woff');
+  font-family: "Cooper Hewitt";
+  src: url("./fonts/CooperHewitt-Light.woff") format("woff"),
+    url("./fonts/CooperHewitt-Thin.woff") format("woff");
 }
-:root{
- --color-primario : #AA964E;
- --color-secundario: #CFC39B;
- --color-pastel : #F3BB99;
- --color-blanco : #FFFFFF;
- --color-marron : #4C4027;
- --color-beige : #A28E77;
+:root {
+  --color-primario: #aa964e;
+  --color-secundario: #cfc39b;
+  --color-pastel: #f3bb99;
+  --color-blanco: #ffffff;
+  --color-marron: #4c4027;
+  --color-beige: #a28e77;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 /* Estilos para la barra de scroll */
 body::-webkit-scrollbar {
-    width: 8px; /* Ancho de la barra de scroll */
-    background-color: #f3bb99; /* Color de fondo de la barra de scroll */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #aa964e; /* Color del pulgar de la barra de scroll */
-  }
-  
-  body::-webkit-scrollbar-thumb:hover {
-    background-color: #cfc39b; /* Color del pulgar de la barra de scroll al pasar el cursor sobre él */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background-color: #a28e77; /* Color de fondo de la pista de la barra de scroll */
-  }
-  
-  body::-webkit-scrollbar-track:hover {
-    background-color: #4c4027; /* Color de fondo de la pista de la barra de scroll al pasar el cursor sobre ella */
-  }
-  
+  width: 8px; /* Ancho de la barra de scroll */
+  background-color: #f3bb99; /* Color de fondo de la barra de scroll */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #aa964e; /* Color del pulgar de la barra de scroll */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #cfc39b; /* Color del pulgar de la barra de scroll al pasar el cursor sobre él */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #a28e77; /* Color de fondo de la pista de la barra de scroll */
+}
+
+body::-webkit-scrollbar-track:hover {
+  background-color: #4c4027; /* Color de fondo de la pista de la barra de scroll al pasar el cursor sobre ella */
+}
+
 /* Estilos para el header */
 
 /* Estilos generales del menú */
 header {
-
   color: #fff;
   padding: 10px;
   position: fixed;
@@ -57,7 +56,7 @@ header {
   z-index: 1000;
   backdrop-filter: blur(1rem); /* Aplicar el filtro de desenfoque */
   transition: backdrop-filter 0.3s ease; /* Añadir transición para el filtro */
-  box-shadow: 0 1rem 1rem rgba(0,0,0,0.2);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -105,15 +104,15 @@ nav a {
   text-decoration: none;
   font-size: 18px;
   color: var(--color-blanco);
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-decoration: none;
-  font-family: 'Cooper Hewitt';
+  font-family: "Cooper Hewitt";
   font-weight: 800;
 }
 nav ul li a.active {
   color: var(--color-pastel);
   padding: 0.5rem;
-  transition: all .5s;
+  transition: all 0.5s;
   border-bottom: 1px solid var(--color-pastel);
   text-decoration: var(--color-primario);
 }
@@ -149,34 +148,34 @@ nav ul li a.active {
 }
 
 .container_text-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    letter-spacing: .2rem;
-    text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  letter-spacing: 0.2rem;
+  text-align: start;
 }
 .home_text-1 {
-    font-size: 1.5rem;
-     margin: 0;
-     padding: 0;
-    font-weight: bold;
-    color: var(--color-blanco);
-    font-family: 'Cooper Hewitt';
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: var(--color-blanco);
+  font-family: "Cooper Hewitt";
 }
 
 .home_text-2 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--color-blanco);
-    font-family: 'PT Sans';
-    margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-blanco);
+  font-family: "PT Sans";
+  margin: 0;
 }
 .home_text-3 {
-  font-family: 'Cooper Hewitt';
+  font-family: "Cooper Hewitt";
   color: var(--color-blanco);
   font-size: 1.4rem;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   width: 7.5rem;
   /* margin: 0 auto; */
   text-align: start;
@@ -184,15 +183,15 @@ nav ul li a.active {
 .text-type {
   position: relative;
 }
-.text-type::after{
-  content: '|';
-    font-weight: bold;
-    position: absolute;
-    right: 0;
-    color: white;
-    backdrop-filter: blur(1rem);
-    width: 100%;
-    animation: typing 4s steps(28) alternate infinite;
+.text-type::after {
+  content: "|";
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  color: white;
+  backdrop-filter: blur(1rem);
+  width: 100%;
+  animation: typing 4s steps(28) alternate infinite;
 }
 
 @keyframes typing {
@@ -205,35 +204,35 @@ nav ul li a.active {
 }
 
 .container_parrafo-info p {
-    font-family: 'Cooper Hewitt';
-    color: var(--color-secundario);
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    line-height: 2rem;
+  font-family: "Cooper Hewitt";
+  color: var(--color-secundario);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
 }
 .button-home {
-    display: inline-block;
-    background-color: var(--color-blanco);
-    border-radius: 3rem;
-    padding: 0.7rem 4rem 0.6rem 4rem;
-    color: var(--color-primario);
-    font-family: 'Cooper Hewitt';
-    font-weight: bold;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    margin: 2rem 0 2rem 1rem;
-    border: none;
-    cursor: pointer;
-    transition: .4s;
+  display: inline-block;
+  background-color: var(--color-blanco);
+  border-radius: 3rem;
+  padding: 0.7rem 4rem 0.6rem 4rem;
+  color: var(--color-primario);
+  font-family: "Cooper Hewitt";
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0 2rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
 }
-.button-home:hover{
-    background-color:var(--color-primario) ;
-    color: var(--color-blanco);
-    font-weight: bold;
-    transform: scale(1.1);
-    box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
-    transition: all .4s ease;
+.button-home:hover {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-weight: bold;
+  transform: scale(1.1);
+  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
 }
 
 /* Definición de la animación "typing" */
@@ -247,12 +246,12 @@ nav ul li a.active {
 }
 
 .container_parrafo-info p {
-    font-family: 'Cooper Hewitt';
-    color: var(--color-blanco);
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    line-height: 2rem;
-    text-align: start;
+  font-family: "Cooper Hewitt";
+  color: var(--color-blanco);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  text-align: start;
 }
 /* Estilos para las secciones */
 /* section {
@@ -260,494 +259,504 @@ nav ul li a.active {
 } */
 
 h2 {
-    color: #333;
+  color: #333;
 }
 
 /* Estilos para la sección de membresía */
 .membership-details {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .comprar-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    background-color: var(--color-blanco);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .comprar-btn:hover {
-    background-color:var(--color-primario) ;
-    color: var(--color-blanco);
-    font-weight: bold;
-    transform: scale(1.1);
-    box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
-    transition: all .4s ease;
-  }
-  
-  /* .comprar-btn:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
-  }
-  
-  .comprar-btn:active {
-    background-color: #004080;
-  } */
-  
-/* Seccion  productos */
-.productos{
-    padding: 50px 10px;
-    background-color: var(--color-beige);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 4rem;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  background-color: var(--color-blanco);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.productos h3{
-    color: var(--color-marron);
-    font-family: 'Cooper Hewitt';
-    font-size: 1rem;
-    letter-spacing: .03rem;
-    white-space: pre-line;
-    text-align: center;
-    line-height: 2.2rem;
 
+.comprar-btn:hover {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  font-weight: bold;
+  transform: scale(1.1);
+  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+/* Seccion  productos */
+.productos {
+  padding: 50px 10px;
+  background-color: var(--color-beige);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.productos h3 {
+  color: var(--color-marron);
+  font-family: "Cooper Hewitt";
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  white-space: pre-line;
+  text-align: center;
+  line-height: 2.2rem;
 }
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .card {
-    width: 300px;
-    margin: 20px;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .card h3 {
-    margin-top: 10px;
-  }
-  
-  .card p {
-    color: #888;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.card p {
+  color: #888;
+}
+
 /*section membresia */
 
-h1{
-    margin-top: 6rem;
-    font-size: 3rem;
-    font-family: 'Cooper Hewitt';
-    color: var(--color-blanco);
+h1 {
+  margin-top: 6rem;
+  font-size: 3rem;
+  font-family: "Cooper Hewitt";
+  color: var(--color-blanco);
 }
 .membresía {
-
-    padding: 50px 10px;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    background-color: var(--color-marron);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 50px 10px;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  background-color: var(--color-marron);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.membresía h3{
-    font-family: 'Cooper Hewitt';
-    color: var(--color-pastel);
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-align: start;
+.membresía h3 {
+  font-family: "Cooper Hewitt";
+  color: var(--color-pastel);
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: start;
 }
-.contenedor-membresía-details{
-     display: flex;
-     
-
+.contenedor-membresía-details {
+  display: flex;
 }
-.contenedor-membresía-details p{
-    color: var(--color-blanco);
-    font-family: 'Cooper Hewitt';
-    font-size: 1rem;
-    letter-spacing: .03rem;
-    white-space: pre-line;
-    text-align: justify;
-    line-height: 2.2rem;
+.contenedor-membresía-details p {
+  color: var(--color-blanco);
+  font-family: "Cooper Hewitt";
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  white-space: pre-line;
+  text-align: justify;
+  line-height: 2.2rem;
 }
-.contenedor-testimonios-beneficios{
-    display: flex;
-    flex-direction: column;
-    padding: 0 80px;
-    width: 50%;
-
+.contenedor-testimonios-beneficios {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  width: 50%;
 }
-.contenedor-testimonios-beneficios h4{
-    color: var(--color-blanco);
-    font-family: 'Cooper Hewitt';
-    letter-spacing: .1rem;
-    font-size: 1.4rem;
-    margin-top: 1rem;
+.contenedor-testimonios-beneficios h4 {
+  color: var(--color-blanco);
+  font-family: "Cooper Hewitt";
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
-.container-exclusive-products{
-    display: flex;
-    justify-content: space-evenly;
+.container-exclusive-products {
+  display: flex;
+  justify-content: space-evenly;
 }
 .membership-details {
-    margin-bottom: 30px;
-    padding: 0 80px;
-    height: 50%;
+  margin-bottom: 30px;
+  padding: 0 80px;
+  height: 50%;
 }
 .membership-details ul li {
-    color: var(--color-blanco);
-    font-family: 'Cooper Hewitt';
-    font-size: 1rem;
-    letter-spacing: .03rem;
-    white-space: pre-line;
-    text-align: justify;
-    line-height: 2.2rem;
+  color: var(--color-blanco);
+  font-family: "Cooper Hewitt";
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  white-space: pre-line;
+  text-align: justify;
+  line-height: 2.2rem;
 }
 /* .testimonials {
     margin-bottom: 30px;
 } */
 
 .testimonial {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .testimonial img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .client-name {
-    font-style: italic;
-    font-size: 14px;
+  font-style: italic;
+  font-size: 14px;
 }
 
 .exclusive-products {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .product {
-    text-align: center;
+  text-align: center;
 }
 
 .product img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .price {
-    font-weight: bold;
+  font-weight: bold;
 }
 /* MEMBRESIA /*
 
 /*FORMULARIO*/
-.membership-form{
-    padding: 50px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background-color: var(--color-primario);
-    padding-bottom: 4rem;
+.membership-form {
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: var(--color-primario);
+  padding-bottom: 4rem;
 }
-.contenedor-formulario{
-    display: flex;
-    justify-content: space-evenly;
-
-    
+.contenedor-formulario {
+  display: flex;
+  justify-content: space-evenly;
 }
 .container--contacto {
-
-    background-color: var(--color-secundario);
-    margin: 20px;
-    max-width: 500px;
-    position: relative;
-    border-radius: 24px;
-    padding: 2rem 3rem ;
-    
+  background-color: var(--color-secundario);
+  max-width: 500px;
+  position: relative;
+  border-radius: 24px;
+  padding: 2rem 3rem;
 }
 .container_text--contacto {
-    width: 100%;
+  width: 100%;
 }
 
 .container_text--contacto p {
-    font-size: 1.3rem;
-    font-family: 'Cooper Hewitt';
-    color: var(--color-blanco);
-    margin-bottom: 2rem;
-    letter-spacing: 1px;
-    line-height: 2.3rem;
-    
+  font-size: 1.3rem;
+  font-family: "Cooper Hewitt";
+  color: var(--color-blanco);
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  line-height: 2.3rem;
 }
- .form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .form input {
-    font-family: 'Cooper Hewitt';
-    background: transparent;
-    border: 1px solid var(--color-blanco);
-    width: 100%;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: var(--color-blanco);
-    font-size: 1.3rem;
-    outline: none;
-    margin-bottom: 1rem;
-    letter-spacing: 1px;
+  font-family: "Cooper Hewitt";
+  background: transparent;
+  border: 1px solid var(--color-blanco);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--color-blanco);
+  font-size: 1.3rem;
+  outline: none;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 .btn_form--contacto {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.validate{
-
-    
-    height: 48px;
-    font-size: 18px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    font-weight: 700;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    background-color:var(--color-marron);
-    color: #fdfffd;
-    cursor: pointer;
-    transition: 1s all;
+.validate {
+  height: 48px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-marron);
+  color: #fdfffd;
+  cursor: pointer;
+  transition: 1s all;
 }
-.validate:hover{
-        background-color:var(--color-primario) ;
-        color: var(--black);
-        font-weight: bold;
-        transform: scale(1.1);
-        box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
-        transition: all .4s ease;
+.validate:hover {
+  background-color: var(--color-primario);
+  color: var(--black);
+  font-weight: bold;
+  transform: scale(1.1);
+  box-shadow: 0px 9px 15px -1px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
 }
 /*QUIENES SOMOS*/
-.quienes-somos{
-    padding: 50px;
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-beige);
-    align-items: center;
-    flex-direction: column;
+.quienes-somos {
+  padding: 50px 10px;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-beige);
+  align-items: center;
+  flex-direction: column;
 }
 .containerabout {
-    /* max-width: 950px; Ajusta el ancho máximo del contenedor según tus preferencias */
-    max-width: 100em;
-    margin: 0 auto;
-    padding: 0px 20px;
-  }
-  
-  .content-description {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .description {
-    flex: 1;
-    padding-right: 20px; /* Ajusta el espaciado derecho entre la descripción y la foto según tus preferencias */
-  }
-  .description p{
-    font-family: 'Cooper Hewitt';
-    font-size: 1rem;
-    letter-spacing: .03rem;
-    white-space: pre-line;
-    text-align: justify;
-    line-height: 2.2rem;
+  /* max-width: 950px; Ajusta el ancho máximo del contenedor según tus preferencias */
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 0px 20px;
 }
-  .content-values{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
 
-  }
-  .photo {
-    /* flex: 1; */
-    text-align: center;
-  }
-  
-  .photo img {
-    width: 100%; /* Ajusta el tamaño de la imagen según tus preferencias */
-    max-width: 400px; /* Ajusta el ancho máximo de la imagen según tus preferencias */
-    border-radius: 10px; /* Aplica bordes redondeados si deseas */
-  }
-  .photo1 img{
-        width: 100%;
-        max-width: 400px;
-        border-radius: 10px;
-  }
-  .values {
-    flex: 1;
-    padding-left: 20px; /* Ajusta el espaciado derecho entre la descripción y la foto según tus preferencias */
-  }
-  
-  .values h2 {
-    margin-bottom: 10px;
-    font-family: 'Cooper Hewitt';
-    color: var(--color-pastel);
-    text-align: center;
-    font-size: 1.5rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    text-align: start;
-  }
-  
-  .values ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .values ul li {
-    font-family: 'Cooper Hewitt';
-    font-size: 1rem;
-    letter-spacing: .03rem;
-    white-space: pre-line;
-    text-align: justify;
-    line-height: 2.2rem;
-  }
+.content-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  flex: 1;
+  padding-right: 20px; /* Ajusta el espaciado derecho entre la descripción y la foto según tus preferencias */
+}
+.description p {
+  font-family: "Cooper Hewitt";
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  white-space: pre-line;
+  text-align: justify;
+  line-height: 2.2rem;
+}
+.content-values {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  /* flex: 1; */
+  text-align: center;
+}
+
+.photo img {
+  width: 100%; /* Ajusta el tamaño de la imagen según tus preferencias */
+  max-width: 400px; /* Ajusta el ancho máximo de la imagen según tus preferencias */
+  border-radius: 10px; /* Aplica bordes redondeados si deseas */
+}
+.photo1 img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.values {
+  flex: 1;
+  padding-left: 20px; /* Ajusta el espaciado derecho entre la descripción y la foto según tus preferencias */
+}
+
+.values h2 {
+  margin-bottom: 10px;
+  font-family: "Cooper Hewitt";
+  color: var(--color-pastel);
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  text-align: start;
+}
+
+.values ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.values ul li {
+  font-family: "Cooper Hewitt";
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  white-space: pre-line;
+  text-align: justify;
+  line-height: 2.2rem;
+}
 /*modal*/
 
+.modal {
+  border-radius: 24px;
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  color: black;
+}
+.modal-content {
+  background-color: var(--color-pastel);
+  margin: 15% 30px; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px; /* Could be more or less, depending on screen size */
+  border-radius: 24px;
+}
+.modal-content p {
+  font-family: "Cooper Hewitt";
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  white-space: pre-line;
+  text-align: justify;
+  line-height: 2.2rem;
+}
 
-.modal{
-    border-radius: 24px;
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    color: black;
-  }
-  .modal-content {
-    background-color: var(--color-pastel);
-    margin: 15% 30px; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    max-width:500px ; /* Could be more or less, depending on screen size */
-    border-radius: 24px;
-  }
-  .modal-content p{
-    font-family: 'Cooper Hewitt';
-    font-size: 1rem;
-    letter-spacing: .03rem;
-    white-space: pre-line;
-    text-align: justify;
-    line-height: 2.2rem;
-  }
+.close {
+  color: #fbf9fa;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
 
-  .close {
-    color: #fbf9fa;
-    font-size: 28px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: rgb(252, 252, 252);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  h1{
-    text-align: center;
-  }
-  /*Styles for mobiles*/
-  @media screen and (max-width: 767px) {
-    .homeSection{
-      width: 100%;
+.close:hover,
+.close:focus {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+/*Styles for mobiles*/
+@media screen and (max-width: 767px) {
+  .homeSection {
+    width: 100%;
     height: 850px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    }
-   /* .banner-home {
+  }
+  /* .banner-home {
       /* Ajustar el ancho para que se ajuste al tamaño de pantalla en dispositivos móviles */
-     /* width: 100vw;
+  /* width: 100vw;
     }
   */
-    .home {
-      /* Reducir el padding izquierdo en dispositivos móviles */
-      padding-left: 1rem;
-    }
-    .container_parrafo-info p{
-      display: block;
-    }
-    .contenedor-membresía-details{
-      flex-direction: column;
-      max-width: 400px;
-    }
-    /*menu*/
-    .menu-icon {
-      display: block;
-    }
+  .home {
+    /* Reducir el padding izquierdo en dispositivos móviles */
   
-    nav {
-      display: none;
-      position: fixed;
-      top: 70px; /* Ajusta este valor para colocar el menú debajo del header */
-      left: 0;
-      background-color: #444;
-      width: 100%;
-      padding: 20px;
-      z-index: 999;
-    }
-  nav ul{
+    margin-top: 0;
+    padding: 0px 10px;
+  }
+  .container_parrafo-info p {
+    display: block;
+  }
+  .contenedor-membresía-details {
+    flex-direction: column;
+    max-width: 400px;
+  }
+  /*menu*/
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: fixed;
+    top: 70px; /* Ajusta este valor para colocar el menú debajo del header */
+    left: 0;
+    background-color: #444;
+    width: 100%;
+    /* padding: 20px; */
+    z-index: 999;
+  }
+  nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
   }
-    nav.show {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    nav li {
-      margin: 10px 0;
-    }
-    .content-values {flex-direction: column;}
+  nav.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  nav li {
+    margin: 10px 0;
+  }
+  .content-values {
+    flex-direction: column;
+  }
+  .container-exclusive-products {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .values {
+    flex: 1;
+   padding-left: 0px; 
+  }
+  .membership-details{
+    padding: 0px 30px;
+  }
+  .contenedor-testimonios-beneficios {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 30px;
+    width: auto;
+}
+.product {
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.description{
+  padding-right: 0px;
+}
+.testimonial{
+  flex-wrap: wrap;
+}
+}
