@@ -302,7 +302,7 @@ h2 {
   
 /* Seccion  productos */
 .productos{
-    padding: 50px;
+    padding: 50px 10px;
     background-color: var(--color-beige);
     display: flex;
     flex-direction: column;
@@ -359,7 +359,7 @@ h1{
 }
 .membresía {
 
-    padding: 50px;
+    padding: 50px 10px;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
     background-color: var(--color-marron);
     display: flex;
@@ -468,7 +468,7 @@ h1{
 
 /*FORMULARIO*/
 .membership-form{
-    padding: 50px;
+    padding: 50px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
