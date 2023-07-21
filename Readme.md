@@ -1,5 +1,5 @@
 # Florería Flower Haven - Validación de Tarjeta
-<picture align="center" width="100%"> <img width="100%" src="/src/images/banner-Floreria.png"></picture><br>
+<picture align="center" width="100%"> <img width="100%" src="/src/images/banner-readme.png"></picture><br>
 ## Descripción:
 
 El producto que hemos creado es una pagina web para la florería "Flower Haven" que tiene como objetivo permitir a los usuarios validar sus tarjetas de crédito al realizar suscripciones para compras de flores y arreglos florales. Esta pagina se ha desarrollado para mejorar la experiencia del usuario y asegurar que sus pagos sean seguros y confiables.
