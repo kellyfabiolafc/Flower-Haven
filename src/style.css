@@ -10,6 +10,7 @@
   --color-blanco: #ffffff;
   --color-marron: #4c4027;
   --color-beige: #a28e77;
+  --font-Cooper:  "Cooper Hewitt";
 }
 
 body {
@@ -495,10 +496,10 @@ h1 {
   background: transparent;
   border: 1px solid var(--color-blanco);
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   color: var(--color-blanco);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   outline: none;
   margin-bottom: 1rem;
   letter-spacing: 1px;
@@ -667,6 +668,36 @@ h1 {
 h1 {
   text-align: center;
 }
+
+
+/* Estilos generales del texto */
+.footer {
+  background-color: var(--color-marron);
+  color: var(--color-blanco);
+  padding: 20px 0;
+}
+
+.footer-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos del texto */
+.footer-text {
+  font-family: var(--font-Cooper);
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el icono de GitHub */
+.github-icon {
+  font-size: 1.5rem;
+  color: var(--color-blanco);
+}
+
 /*Styles for mobiles*/
 @media screen and (max-width: 767px) {
   .homeSection {
@@ -715,11 +746,13 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   nav.show {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px 0px;
   }
 
   nav li {
@@ -758,5 +791,16 @@ h1 {
 }
 .testimonial{
   flex-wrap: wrap;
+}
+.footer {
+  padding: 10px 0;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+}
+
+.github-icon {
+  font-size: 1.3rem;
 }
 }
