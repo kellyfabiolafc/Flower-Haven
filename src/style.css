@@ -483,13 +483,13 @@ h1{
     
 }
 .container--contacto {
-    max-width: 500px;
+
     background-color: var(--color-secundario);
-    border-radius: 24px;
-    padding: 1rem 3rem;
-    position: relative;
     margin: 20px;
-   
+    max-width: 500px;
+    position: relative;
+    border-radius: 24px;
+    padding: 2rem 3rem ;
     
 }
 .container_text--contacto {
@@ -497,10 +497,10 @@ h1{
 }
 
 .container_text--contacto p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Cooper Hewitt';
     color: var(--color-blanco);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     letter-spacing: 1px;
     line-height: 2.3rem;
     
@@ -519,7 +519,7 @@ h1{
     padding: 1rem;
     border-radius: 1rem;
     color: var(--color-blanco);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     outline: none;
     margin-bottom: 1rem;
     letter-spacing: 1px;
