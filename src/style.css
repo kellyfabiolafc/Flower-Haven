@@ -3,6 +3,7 @@
   src: url("./fonts/CooperHewitt-Light.woff") format("woff"),
     url("./fonts/CooperHewitt-Thin.woff") format("woff");
 }
+
 :root {
   --color-primario: #aa964e;
   --color-secundario: #cfc39b;
@@ -193,15 +194,6 @@ nav ul li a.active {
   backdrop-filter: blur(1rem);
   width: 100%;
   animation: typing 4s steps(28) alternate infinite;
-}
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 .container_parrafo-info p {
@@ -450,7 +442,7 @@ h1 {
 .price {
   font-weight: bold;
 }
-/* MEMBRESIA /*
+
 
 /*FORMULARIO*/
 .membership-form {
@@ -617,7 +609,9 @@ h1 {
   text-align: justify;
   line-height: 2.2rem;
 }
-/*modal*/
+
+/* Estilos para la sección modal */
+
 
 .modal {
   border-radius: 24px;
@@ -658,7 +652,7 @@ h1 {
   top: 10px;
   right: 20px;
 }
-
+/*Selecciona elementos en un estado específico*/
 .close:hover,
 .close:focus {
   color: rgb(252, 252, 252);
@@ -700,6 +694,7 @@ h1 {
 
 /*Styles for mobiles*/
 @media screen and (max-width: 767px) {
+  /*responsive for home */
   .homeSection {
     width: 100%;
     height: 850px;
@@ -709,29 +704,19 @@ h1 {
     align-items: center;
     position: relative;
   }
-  /* .banner-home {
-      /* Ajustar el ancho para que se ajuste al tamaño de pantalla en dispositivos móviles */
-  /* width: 100vw;
-    }
-  */
   .home {
-    /* Reducir el padding izquierdo en dispositivos móviles */
-  
     margin-top: 0;
     padding: 0px 10px;
   }
   .container_parrafo-info p {
     display: block;
   }
-  .contenedor-membresía-details {
-    flex-direction: column;
-    max-width: 400px;
-  }
-  /*menu*/
+
+  /*responsive for menu header*/
   .menu-icon {
     display: block;
   }
-
+/*responsive for the navbar of header*/
   nav {
     display: none;
     position: fixed;
@@ -748,50 +733,72 @@ h1 {
     align-items: center;
     width: 100%;
   }
+
   nav.show {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
   }
 
   nav li {
-    margin: 10px 0;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+   margin: 0;
+   
   }
-  .content-values {
+  nav li:hover{
+    background-color: black;
+  }
+ 
+/*Respnsive for the Section Products*/
+  .product {
     flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
   }
   .container-exclusive-products {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
   }
-  .values {
-    flex: 1;
-   padding-left: 0px; 
-  }
-  .membership-details{
-    padding: 0px 30px;
-  }
-  .contenedor-testimonios-beneficios {
-    display: flex;
-    flex-direction: column;
 
-    padding: 0px 30px;
-    width: auto;
-}
-.product {
-  flex-direction: column;
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
+/* Responsive for the  membership */
 .description{
   padding-right: 0px;
 }
 .testimonial{
   flex-wrap: wrap;
 }
+.contenedor-membresía-details {
+  flex-direction: column;
+  max-width: 400px;
+}
+.membership-details{
+  padding: 0px 30px;
+}
+.contenedor-testimonios-beneficios {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px 30px;
+  width: auto;
+}
+/*Responsive for the About */
+.content-values {
+  flex-direction: column;
+}
+.values {
+  flex: 1;
+ padding-left: 0px; 
+}
+
+ /*Resposinve for the footer*/
+
 .footer {
   padding: 10px 0;
 }
