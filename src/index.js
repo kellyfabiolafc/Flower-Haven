@@ -3,26 +3,26 @@ import validator from './validator.js';
 const input = document.getElementById("cardnumber");
 input.addEventListener("input", function() {
   if (!/^\d+$/.test(this.value)) {
-    this.value = this.value.replace(/[^\d]+/g, ""); 
+    this.value = this.value.replace(/[^\d]+/g, "");
     alert("Solo puedes ingresar numeros");
   }
 });
 
 const form = document.getElementById("myForm");
-form.addEventListener("submit", function(event) {//La función comprueba si el campo "cardnumber" está vacío. 
+form.addEventListener("submit", function(event) {//La función comprueba si el campo "cardnumber" está vacío.
   const input = document.getElementById("cardnumber");
   if (input.value.trim().length === 0) {
     // El campo está vacío, se detiene el envío del formulario
     event.preventDefault();
-    openAlert("El campo número de tarjeta no puede estar vacío");/*Si está vacío, se detiene el envío del formulario y 
+    openAlert("El campo número de tarjeta no puede estar vacío");/*Si está vacío, se detiene el envío del formulario y
     se muestra una alerta al usuario indicando que el campo no puede estar vacío.*/
   }
-  else { 
+  else {
     const valid = validator.isValid(document.getElementById("cardnumber").value);
     const maskify=validator.maskify(document.getElementById("cardnumber").value);
     const brand= validator.getBrand(document.getElementById("cardnumber").value);
     event.preventDefault();
-    if (valid){  
+    if (valid){
       const validacion = "¡Felicitaciones! Tu suscripción se ha realizado exitosamente. Disfruta de todos los beneficios de nuestra membresía especial para clientes frecuentes.";
       const franquicia = "Franquicia: " + brand;
       const enmascaramiento  = maskify;
@@ -51,13 +51,13 @@ menuLinks.forEach((link) => {
     menuLinks.forEach((link) => {
       link.classList.remove('active');
     });
-        
+
     // Agrega la clase activa al enlace actual
     event.target.classList.add('active');
   });
 });
 
-//modal 
+//modal
 
 const openModal = (message1, message2, message3) => {
   const modalContent = document.querySelector('.modal-content');
@@ -92,4 +92,26 @@ document.querySelector('.close').addEventListener('click', (e) => {
   // Eliminar los párrafos agregados dinámicamente
   modalContent.innerHTML = '';
   document.querySelector('.modal').style.display = 'none';
+});
+const menuIcon = document.querySelector(".menu-icon");
+const nav = document.querySelector("nav");
+
+menuIcon.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
+
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("header");
+  const scrollTop = window.scrollY;
+
+  // Ajusta la altura (en píxeles) a partir de la cual se cambia el color de fondo
+  const triggerHeight = 100;
+
+  if (scrollTop > triggerHeight) {
+    header.style.backgroundColor = "rgba(51, 51, 51, 0.8)"; // Cambia el color de fondo a un filtro
+  } else {
+    // header.style.backgroundColor = "transparent"; // Vuelve a un fondo transparente
+    header.style.backgroundColor = "transparent"; // Vuelve a un fondo transparente
+  }
 });
