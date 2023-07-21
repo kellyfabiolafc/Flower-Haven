@@ -10,7 +10,7 @@
   --color-blanco: #ffffff;
   --color-marron: #4c4027;
   --color-beige: #a28e77;
-  --font-Cooper:  "Cooper Hewitt";
+  --font-Cooper:  "Cooper Hewitt", sans-serif;;
 }
 
 body {
@@ -107,7 +107,7 @@ nav a {
   color: var(--color-blanco);
   letter-spacing: 0.2rem;
   text-decoration: none;
-  font-family: "Cooper Hewitt";
+  font-family: var(--font-Cooper);
   font-weight: 800;
 }
 nav ul li a.active {
@@ -492,7 +492,7 @@ h1 {
 }
 
 .form input {
-  font-family: "Cooper Hewitt";
+  font-family: "Cooper Hewitt",sans-serif;
   background: transparent;
   border: 1px solid var(--color-blanco);
   width: 100%;
