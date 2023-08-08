@@ -38,5 +38,5 @@ Al utilizar la pagina de validación de tarjetas de crédito, los usuarios desar
 
 Puedes acceder al proyecto de "Florería Flower Haven - Validación de Tarjeta" a través del siguiente enlace:
 
-[Proyecto de Florería Flower Haven - Validación de Tarjeta](https://kellyfabiolafc.github.io/Floreria/src/)
+[Proyecto de Florería Flower Haven - Validación de Tarjeta](https://kellyfabiolafc.github.io/Flower-Haven/src/)
 
